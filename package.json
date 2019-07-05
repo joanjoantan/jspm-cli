@@ -23,7 +23,8 @@
     "systemjs": "^0.18.2",
     "systemjs-builder": "git://github.com/systemjs/builder#master",
     "traceur": "0.0.90",
-    "uglify-js": "~2.4.23"
+    "uglify-js": "~2.4.23",
+    "snyk": "^1.192.0"
   },
   "registry": "npm",
   "devDependencies": {
@@ -43,7 +44,9 @@
     "istanbul": "istanbul cover ./node_modules/.bin/_mocha -i='lib/**/*.js'",
     "coverage": "npm run istanbul -- --report html",
     "mocha": "mocha",
-    "jshint": "jshint api.js cli.js jspm.js lib test"
+    "jshint": "jshint api.js cli.js jspm.js lib test",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "bugs": {
     "url": "https://github.com/jspm/jspm/issues"
@@ -57,5 +60,6 @@
     "testlibs",
     "test"
   ],
-  "license": "Apache 2.0"
+  "license": "Apache 2.0",
+  "snyk": true
 }
