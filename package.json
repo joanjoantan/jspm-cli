@@ -5,7 +5,7 @@
   "main": "./api.js",
   "author": "",
   "dependencies": {
-    "chalk": "^1.0.0",
+    "chalk": "^2.0.0",
     "core-js": "^0.9.17",
     "glob": "^5.0.10",
     "graceful-fs": "^3.0.8",
